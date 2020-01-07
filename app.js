@@ -110,5 +110,8 @@ const mcds = {
 
 console.log(mcds.meals[3]);
 
-const jobs = [{name: 'Chandler', jobTitle: 'Accountant'}, {name: 'Phoebe', jobTitle: 'masseuss'}, {name: 'Joey', jobTitle: 'Actor'}, {name: 'Monica', jobTitle: 'Chef'}];
-jobs.forEach(element => console.log(`${element.name} ${element.jobTitle}`));
+const jobs = [{name: 'Chandler', jobTitle: 'Accountant', boss: 'steve'}, {name: 'Phoebe', jobTitle: 'masseuss', boss: 'jose'}, {name: 'Joey', jobTitle: 'Actor', boss: 'will'}, {name: 'Monica', jobTitle: 'Chef'}];
+// jobs.forEach(element => console.log(`${element.name} ${element.jobTitle}`));
+
+jobs.forEach(element => !element.boss ? console.log(`${element.jobTitle} ${element.name} doesn't report to anybody`) : console.log(`${element.jobTitle} ${element.name} reports to ${element.boss}.`));
+
