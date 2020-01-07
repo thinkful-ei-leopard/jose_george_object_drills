@@ -102,3 +102,10 @@ const bob = {
 for (let key in bob) {
   console.log(`${key} ${bob[key]}`)
 }
+
+const mcds = {
+  meals: ['breakfast', 'second breakfast',
+    'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper']
+};
+
+console.log(mcds.meals[3]);
