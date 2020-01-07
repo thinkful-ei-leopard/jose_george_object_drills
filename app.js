@@ -64,3 +64,12 @@ function findById(items, idNum) {
     }
   }
 }
+
+function enrollInSummerSchool(students) {
+  // your code here
+
+  for (let i =0; i <students.length; i++){
+   students[i].status = 'In Summer School';
+ }
+ return students;
+}
