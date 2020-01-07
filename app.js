@@ -10,3 +10,14 @@ function createMyObject() {
 }
 
 console.log(createMyObject())
+
+function updateObject (obj) {
+  const newObj = {
+    foo: 'foo',
+    bar: 'bar',
+    bizz: 'bizz',
+    bang: 'bang',
+  }
+  const obj3 = {...obj, ...newObj };
+  return obj3;
+}
