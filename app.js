@@ -57,13 +57,7 @@ function enrollInSummerSchool(students) {
   });
 };
 
-function findById(items, idNum) {
-  for(let i = 0; i < items.length; i++) {
-    if(items[i].id === idNum) {
-      return items[i]
-    }
-  }
-}
+
 
 function enrollInSummerSchool(students) {
   // your code here
@@ -72,4 +66,12 @@ function enrollInSummerSchool(students) {
    students[i].status = 'In Summer School';
  }
  return students;
+}
+
+function findById(items, idNum) {
+  for(let i = 0; i < items.length; i++) {
+    if(items[i].id === idNum) {
+      return items[i]
+    }
+  }
 }
