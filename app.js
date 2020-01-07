@@ -109,3 +109,6 @@ const mcds = {
 };
 
 console.log(mcds.meals[3]);
+
+const jobs = [{name: 'Chandler', jobTitle: 'Accountant'}, {name: 'Phoebe', jobTitle: 'masseuss'}, {name: 'Joey', jobTitle: 'Actor'}, {name: 'Monica', jobTitle: 'Chef'}];
+jobs.forEach(element => console.log(`${element.name} ${element.jobTitle}`));
