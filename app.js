@@ -1,3 +1,4 @@
+'use strict'
 // function createMyObject() {
 //   return {
 //     foo: 'bar',
@@ -52,20 +53,12 @@
 // }
 
 function enrollInSummerSchool(students) {
-  return students.forEach(for key in students {
-    students[status] = 'In Summer school'
-  });
-};
-
-
-
-function enrollInSummerSchool(students) {
   // your code here
 
   for (let i =0; i <students.length; i++){
-   students[i].status = 'In Summer School';
- }
- return students;
+    students[i].status = 'In Summer School';
+  }
+  return students;
 }
 
 function findById(items, idNum) {
@@ -74,4 +67,15 @@ function findById(items, idNum) {
       return items[i]
     }
   }
+}
+
+function validateKeys(object, expectedKeys) {
+  let newArr = Object.keys(object);
+
+  for(let i = 0; i < expectedKeys.length; i++) { 
+    for(let n = 0; n < newArr.length; i++) { 
+      if(expectedKeys.length === newArr.length && expectedKeys[i] === newArr[n]) { 
+        return true } else { 
+        return false } } }
+
 }
