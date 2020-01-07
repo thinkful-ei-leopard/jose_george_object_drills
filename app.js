@@ -91,3 +91,14 @@ const loaf = {
 // console.log(loaf.flour)
 
 // console.log(loaf.hydration())
+
+const bob = {
+  foo: 1,
+  bar: 2,
+  fum: 3,
+  quux: 4,
+  spam: 5,
+}
+for (let key in bob) {
+  console.log(`${key} ${bob[key]}`)
+}
